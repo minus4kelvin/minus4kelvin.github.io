@@ -1,8 +1,6 @@
---
 layout: default
 title: "Terms & Conditions"
 permalink: /terms
---
 **Terms & Conditions**
 
 These terms and conditions applies to the The Click Idle Mines of Doom app (hereby referred to as "Application") for mobile devices that was created by -4 Kelvin LLC (hereby referred to as "Service Provider") as a Free service.
