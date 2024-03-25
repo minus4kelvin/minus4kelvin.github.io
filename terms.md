@@ -1,5 +1,5 @@
 --
-layout: privacyterms
+layout: default
 title: "Terms & Conditions"
 permalink: /terms
 --
