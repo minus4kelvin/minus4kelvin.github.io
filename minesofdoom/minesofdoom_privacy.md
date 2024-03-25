@@ -1,12 +1,12 @@
 ---
 layout: default
 title: "Privacy Policy"
-permalink: /privacy
+permalink: /minesofdoom/privacy
 ---
 
 **Privacy Policy**
 
-This privacy policy applies to the The Click Idle Mines of Doom app (hereby referred to as "Application") for mobile devices that was created by -4 Kelvin LLC (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
+This privacy policy applies to the Idle Clicker Mines of Doom app (hereby referred to as "Application") for mobile devices that was created by -4 Kelvin LLC (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
 
 **Information Collection and Use**
 
