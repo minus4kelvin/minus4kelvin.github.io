@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for p in site.pages %}
+{% unless p.sitemap == false or p.url contains '/feed' %}
+  <url>
+    <loc>{{ site.url }}{{ p.url }}</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+{% endunless %}
+{% endfor %}
+</urlset>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://minus4kelvin.com/sitemap.xml

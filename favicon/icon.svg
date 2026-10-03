@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none" role="img" aria-label="-4 Kelvin">
+<defs>
+  <linearGradient id="bone" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0.000" stop-color="#FFFFFF"/>
+    <stop offset="0.333" stop-color="#F5F5F0"/>
+    <stop offset="0.667" stop-color="#D4D4CE"/>
+    <stop offset="1.000" stop-color="#A6A6A0"/>
+  </linearGradient>
+</defs>
+
+  <path d="M92.618,73 A30,30 0 0 1 35.382,73" fill="none" stroke="url(#bone)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M35.382,55 A30,30 0 0 1 92.618,55" fill="none" stroke="url(#bone)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24,58H104A6,6 0 0 1 110,64V64A6,6 0 0 1 104,70H24A6,6 0 0 1 18,64V64A6,6 0 0 1 24,58Z" fill="url(#bone)"/>
+</svg>

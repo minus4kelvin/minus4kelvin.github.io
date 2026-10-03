@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="wrap page-head">
+  <p class="eyebrow">{{ page.eyebrow | default: '−4 Kelvin LLC' }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+</div>
+<article class="wrap prose{% if page.wide %} prose-wide{% endif %}">
+  {{ content }}
+</article>

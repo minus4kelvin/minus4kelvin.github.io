@@ -1,52 +1,69 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: −4 Kelvin LLC
+description: >-
+  −4 Kelvin LLC is an independent product studio. We design, build and operate
+  our own apps: Nhom, for finding people to do things with, and Mines of Idle
+  Doomath, an idle math-mining game.
+url: "https://minus4kelvin.com"
+baseurl: ""
+lang: en
 
-title: -4 Kelvin
-email: minus4kelvin@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: minus4kelvin
-github_username:  minus4kelvin
+# A single contact address for everything: support, account & data deletion,
+# press and security reports. Cloudflare Email Routing is already configured for
+# this domain (MX + SPF verified). Apple requires that a work email address be
+# associated with the organization's domain name, so this must NOT be a
+# gmail.com address.
+#
+# To split these out into separate mailboxes later, add keys here (e.g.
+# contact_email_press) and reference them from the templates.
+contact_email: kelvin@minus4kelvin.com
+
+# Legal entity.
+#
+# No D-U-N-S number is published here on purpose: it is collected on the Apple
+# enrollment form and cross-checked against Dun & Bradstreet. Apple's website
+# requirement is only that the site is public, functional and on the entity's
+# own domain — it has no field list, so the number is not needed publicly.
+entity:
+  name: "−4 Kelvin LLC"
+  type: "Limited Liability Company (LLC)"
+  jurisdiction: "Texas, United States"
+  support_hours: "Monday–Friday, 09:00–17:00 UTC"
+  deletion_sla: "30 days"
+
+# Products operated by the studio.
+products:
+  - name: "Nhom"
+    slug: "nhom"
+    url: "https://nhom.app"
+    tagline: "Find your people. Do the thing."
+    summary: >-
+      A social app for local and online events. Browse lobbies for sports, food,
+      gaming, nights out and dates; filter by activity, distance and time; then
+      join or host your own.
+    status: "Live"
+    platforms: "iOS · Android · Web"
+    languages: "English · Tiếng Việt"
+  - name: "Mines of Idle Doomath"
+    slug: "mines-of-idle-doomath"
+    url: "https://minesofdoom.pages.dev"
+    canonical: "https://minesofdoom.minus4kelvin.com"
+    tagline: "Keep the crew mining. Just answer the maths."
+    summary: >-
+      A single-player idle game about a small crew working a very deep shaft.
+      Solve a short equation to earn minerals, buy upgrades and hired miners,
+      and sink a new shaft when a run slows down.
+    status: "Live"
+    platforms: "iOS · Android · Web"
 
 # Build settings
-# theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - tools
+  - README.md
+  - .github

@@ -1,35 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>-4 Kelvin</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="-4 Kelvin" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="" />
-<meta property="og:description" content="" />
-<link rel="canonical" href="" />
-<meta property="og:url" content="" />
-<meta property="og:site_name" content="-4 Kelvin" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="-4 Kelvin" />
-<script type="application/ld+json">
-{"headline":"-4 Kelvin","@type":"WebSite","url":"","description":"","name":"-4 Kelvin","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta name="theme-color" content="#000000">
 
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="" title="-4 Kelvin" />
+  <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/social/og-1200x630.png' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons and social card: from minus4kelvin-branding/dist. -->
+  <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
 <body>
-    <div>
-        {{ content }}
-    </div>
+  <a class="skip" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="wrap hbar">
+      <a class="brand" href="/">
+        <img src="/assets/brand/logo-horizontal@2x.png"
+             srcset="/assets/brand/logo-horizontal.png 1x,
+                     /assets/brand/logo-horizontal@2x.png 2x,
+                     /assets/brand/logo-horizontal@3x.png 3x"
+             alt="−4 Kelvin" width="160" height="23">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="/products/"{% if page.url contains '/products' %} class="on"{% endif %}>Products</a>
+        <a href="/about/"{% if page.url contains '/about' %} class="on"{% endif %}>About</a>
+        <a href="/support/"{% if page.url contains '/support' %} class="on"{% endif %}>Support</a>
+        <a href="/contact/"{% if page.url contains '/contact' %} class="on"{% endif %}>Contact</a>
+        <a class="cta" href="/contact/">Contact&nbsp;us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="fcols">
+        <div class="fcol">
+          <b>Products</b>
+          {% for p in site.products %}<a href="/products/#{{ p.slug }}">{{ p.name }}</a>{% endfor %}
+          <a href="/products/">All products</a>
+        </div>
+        <div class="fcol">
+          <b>Studio</b>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/support/">Support</a>
+        </div>
+        <div class="fcol">
+          <b>Legal</b>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+          <a href="/account-deletion/">Account &amp; data deletion</a>
+          <a href="/contact/">Legal &amp; contact information</a>
+        </div>
+      </div>
+      <p class="legal">
+        © {{ 'now' | date: "%Y" }} {{ site.entity.name }}. All rights reserved.
+        Nhom and Mines of Idle Doomath are products of {{ site.entity.name }}.
+        In-game currencies are virtual only, hold no cash value, and cannot be
+        exchanged for anything.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var t = document.querySelector('.nav-toggle');
+      var n = document.getElementById('site-nav');
+      if (!t || !n) return;
+      t.addEventListener('click', function () {
+        var open = n.classList.toggle('open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
 </body>
-<footer>
-  <a href="https://minus4kelvin.com/legal">Legal</a>
-</footer>
 </html>

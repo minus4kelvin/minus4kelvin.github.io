@@ -1,0 +1,166 @@
+---
+layout: default
+title: null
+description: >-
+  −4 Kelvin LLC is an independent product studio building Nhom, a social app
+  for local and online events, and Mines of Idle Doomath, an idle math-mining
+  game. Free to play, on iOS, Android and the web.
+---
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Independent product studio</p>
+      <h1>We build small products<br>and run them ourselves.</h1>
+      <p class="lede">
+        {{ site.entity.name }} is an independent studio. We design, engineer,
+        write, illustrate and operate every product we ship — no investors, no
+        publisher, no outsourcing.
+      </p>
+      <p class="lede-2">
+        Two live products: a social app for finding people to do things with,
+        and an idle mining game about arithmetic. Both are reachable right now,
+        and both are free at their core.
+      </p>
+      <div class="btns">
+        <a class="btn btn-primary" href="/products/">See our products</a>
+        <a class="btn btn-secondary" href="/contact/">Contact &amp; legal information</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>{{ site.products | size }}</b><span>products in production</span></div>
+        <div class="stat"><b>3</b><span>platforms per product</span></div>
+        <div class="stat"><b>TX</b><span>{{ site.entity.jurisdiction }}</span></div>
+      </div>
+      <p style="margin:22px 0 0"><span class="dom">{{ site.url | remove: 'https://' }}</span></p>
+    </div>
+
+    <div class="stack">
+      <div class="mini offset">
+        <div class="shotbox"><img src="/assets/img/nhom-app.png" alt="The Nhom home screen" loading="lazy"></div>
+        <div class="cap"><b>Nhom</b><span>Local &amp; online events</span></div>
+      </div>
+      <div class="mini">
+        <div class="shotbox"><img src="/assets/img/mines-main.png" alt="Mines of Idle Doomath gameplay" loading="lazy"></div>
+        <div class="cap"><b>Mines of Idle Doomath</b><span>Idle math-mining game</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Our products</h2>
+    <p class="sub">
+      Everything {{ site.entity.name }} operates. Each product is a separate live
+      service with its own site, its own legal documents and its own support route.
+    </p>
+
+    <article class="prod" id="nhom">
+      <div class="txt">
+        <h3><img class="wordmark" src="/assets/img/nhom-logo.png" alt="Nhom"> Nhom</h3>
+        <p class="lead"><b>Find your people. Do the thing.</b></p>
+        <p>
+          Nhom is a social app for local and online events. Browse lobbies for
+          sports, food, gaming, nights out and dates; filter by activity,
+          distance and time; then join or host your own.
+        </p>
+        <p>
+          Every lobby comes with group chat, a feed and recurring groups, so the
+          meetup doesn&rsquo;t die in the comments. Lobbies also rank and compete,
+          turning a casual meetup into something worth showing up for.
+          <em>Nh&oacute;m</em> means <i>group</i> in Vietnamese &mdash; and also to
+          light or kindle.
+        </p>
+        <div class="tagrow">
+          <span class="tag">Social &amp; community</span>
+          <span class="tag">Events</span>
+          <span class="tag">English &amp; Ti&#7871;ng Vi&#7879;t</span>
+          <span class="tag">iOS · Android · Web</span>
+          <span class="tag">Free to join</span>
+        </div>
+        <div class="btns" style="margin:0">
+          <a class="btn btn-primary" href="https://nhom.app">Open nhom.app</a>
+          <a class="btn btn-secondary" href="/products/#nhom">Product details</a>
+        </div>
+      </div>
+      <div class="media">
+        <img src="/assets/img/nhom-app.png" alt="The Nhom home screen, showing the tagline, signup and quick starts" loading="lazy">
+      </div>
+    </article>
+
+    <article class="prod" id="mines-of-idle-doomath">
+      <div class="txt">
+        <h3> Mines of Idle Doomath</h3>
+        <p class="lead"><b>Keep the crew mining. Just answer the maths.</b></p>
+        <p>
+          A single-player idle game about a small crew working a very deep shaft.
+          Solve a short equation to earn minerals, buy upgrades and hired miners,
+          spend gems on a second upgrade track, and sink a new shaft when a run
+          slows down for a permanent multiplier.
+        </p>
+        <p>
+          Free on every platform. No paywall on progression, no banner or
+          interstitial ads, and every miner, upgrade and cosmetic is earnable by
+          playing. The crew keeps digging while you are away.
+        </p>
+        <div class="tagrow">
+          <span class="tag">Idle / clicker</span>
+          <span class="tag">Single player</span>
+          <span class="tag">Offline playable</span>
+          <span class="tag">iOS · Android · Web</span>
+          <span class="tag">Free to play</span>
+        </div>
+        <div class="btns" style="margin:0">
+          <a class="btn btn-primary" href="https://minesofdoom.minus4kelvin.com">Play in browser</a>
+          <a class="btn btn-secondary" href="/products/#mines-of-idle-doomath">Product details</a>
+        </div>
+      </div>
+      <div class="media">
+        <img class="narrow" src="/assets/img/mines-main.png" alt="Mines of Idle Doomath gameplay" loading="lazy">
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Who we are</h2>
+    <p class="sub">
+      The facts that identify the entity behind these products. Anything marked
+      <span class="todo">TODO</span> is a field still to be completed from
+      registration records.
+    </p>
+
+    <div class="kv">
+      <div class="row"><div class="k">Legal entity name</div><div class="v"><strong>{{ site.entity.name }}</strong></div></div>
+      <div class="row"><div class="k">Entity type</div><div class="v">{{ site.entity.type }}</div></div>
+      <div class="row"><div class="k">State / country of formation</div><div class="v">{{ site.entity.jurisdiction }}</div></div>
+      <div class="row"><div class="k">Website</div><div class="v">{{ site.url }}</div></div>
+      <div class="row"><div class="k">Contact email</div><div class="v"><a class="mailto" href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></div></div>
+      <div class="row"><div class="k">Products operated</div><div class="v">Nhom (nhom.app) · Mines of Idle Doomath</div></div>
+    </div>
+
+    <p><a href="/contact/">Full contact and legal information →</a></p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>How we work</h2>
+    <p class="sub">Short, checkable statements rather than vague marketing copy.</p>
+    <div class="grid3">
+      <div class="card"><div class="ico">🛠</div><h3>Built and operated in-house</h3>
+        <p>Design, engineering, backend, art, audio and writing are all done by the studio. We do not license someone else&rsquo;s product and call it a portfolio.</p></div>
+      <div class="card"><div class="ico">📱</div><h3>Three platforms, one codebase</h3>
+        <p>Every product ships to iOS, Android and the web from a single project, so platforms feature-parity instead of arriving years apart.</p></div>
+      <div class="card"><div class="ico">🌍</div><h3>Built for real communities</h3>
+        <p>Nhom runs in English and Ti&#7871;ng Vi&#7879;t, because the people it is for speak both.</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>Privacy by default</h3>
+        <p>Both products are usable without an account, keep data locally unless you opt in, and publish a one-step deletion path.</p></div>
+      <div class="card"><div class="ico">💬</div><h3>Real human support</h3>
+        <p>A named person reads every message, on an address at our own domain, with support hours and a stated reply time.</p></div>
+      <div class="card"><div class="ico">🎮</div><h3>Free stays free</h3>
+        <p>No paywall on core progression. Purchases are cosmetic or convenience only and never outpace someone who never pays.</p></div>
+    </div>
+  </div>
+</section>
