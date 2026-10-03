@@ -4,7 +4,13 @@ description: >-
   −4 Kelvin LLC is an independent product studio. We design, build and operate
   our own apps: Nhom, for finding people to do things with, and Mines of Idle
   Doomath, an idle math-mining game.
-url: "https://minus4kelvin.com"
+# The canonical host. GitHub Pages serves `www` (see CNAME) and the apex
+# 301-redirects to it, so canonicals, og:url, the sitemap and | absolute_url
+# must all emit the www host — pointing a canonical at a redirecting host is an
+# SEO inconsistency. The apex is the friendlier URL to publish and to enter in
+# Apple's enrollment form; either resolves to the same site.
+url: "https://www.minus4kelvin.com"
+apex_url: "https://minus4kelvin.com"
 baseurl: ""
 lang: en
 
