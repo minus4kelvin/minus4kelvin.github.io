@@ -181,7 +181,7 @@ minus, so the logo alone reads `−4 KELVIN` and no text is set beside it.
 | File | Source in `minus4kelvin-branding` |
 | --- | --- |
 | `assets/brand/logo-horizontal{,@2x,@3x}.png` | `dist/rn/` — header lockup (bone on transparent) |
-| `assets/brand/mark-large{,@2x,@3x}.png` | `dist/rn/` |
+| `assets/brand/mark-large{,@2x,@3x}.png` | `dist/rn/` (currently unused — the hero logo was removed) |
 | `assets/brand/field-subtle-512.png` | `dist/patterns/` — hero texture |
 | `assets/social/og-1200x630.png` | `dist/social/` — `og:image` |
 | `favicon/icon.svg` | `dist/favicon/` |

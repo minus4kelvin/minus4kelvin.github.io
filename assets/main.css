@@ -58,9 +58,6 @@ img{max-width:100%;height:auto;display:block}
 .site-nav{margin-left:auto;display:flex;align-items:center;gap:26px;font-size:14px}
 .site-nav a{color:var(--mid);font-weight:500}
 .site-nav a:hover,.site-nav a.on{color:var(--bone);text-decoration:none}
-.site-nav a.cta{background:var(--bone);color:var(--void);font-weight:700;padding:9px 17px;
-  border-radius:9px}
-.site-nav a.cta:hover{background:var(--white);text-decoration:none}
 
 .nav-toggle{display:none;background:none;border:1px solid var(--ash);border-radius:9px;
   width:40px;height:38px;margin-left:auto;cursor:pointer;padding:10px 9px}
@@ -75,13 +72,6 @@ img{max-width:100%;height:auto;display:block}
   background:url("/assets/brand/field-subtle-512.png") repeat;
   -webkit-mask-image:radial-gradient(760px 420px at 12% 0%,#000 0%,transparent 70%);
   mask-image:radial-gradient(760px 420px at 12% 0%,#000 0%,transparent 70%)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
-  position:relative}
-
-/* The corona on its own. It is the whole identity, so it does not need a
-   caption or a surrounding panel. */
-.hero-mark{display:flex;justify-content:center}
-.hero-mark img{width:min(72%,288px);height:auto}
 
 /* ---------- compact product list ---------- */
 .plist{display:grid;gap:0}
@@ -225,8 +215,6 @@ h3{font-size:20px;letter-spacing:-.3px;margin:0 0 10px;font-weight:700}
 
 /* ---------- responsive ---------- */
 @media (max-width:980px){
-  .hero-grid{grid-template-columns:1fr;gap:40px}
-  .hero-mark img{width:min(52%,200px)}
   .prow{grid-template-columns:1fr;gap:10px}
   .prod{grid-template-columns:1fr}
   .prod .media{padding:20px}
@@ -245,7 +233,6 @@ h3{font-size:20px;letter-spacing:-.3px;margin:0 0 10px;font-weight:700}
     padding:8px 20px 16px}
   .site-nav.open{display:flex}
   .site-nav a{padding:11px 0;border-bottom:1px solid rgba(30,30,36,.9);color:var(--bone)}
-  .site-nav a.cta{margin-top:14px;text-align:center;border-bottom:0}
   h1{font-size:34px;letter-spacing:-1.2px}
   .page-head h1{font-size:31px}
   h2{font-size:25px}
